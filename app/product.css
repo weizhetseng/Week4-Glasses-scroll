@@ -1,0 +1,20 @@
+.product-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-bg .bg-left {
+  width: 50%;
+  height: 296px;
+  background: url("./assets/images/product-header-1.png") no-repeat center;
+  background-size: cover;
+}
+
+.product-bg .bg-left {
+  width: 50%;
+  height: 296px;
+  background: url("./assets/images/product-header-1.png") no-repeat center;
+  background-size: cover;
+}
+/*# sourceMappingURL=product.css.map */
