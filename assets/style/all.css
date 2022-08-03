@@ -699,11 +699,11 @@ main .product2-bg {
     background-size: cover; }
 
 @media (max-width: 768px) {
-  main .product-bg .bg-left {
+  main .product2-bg .bg-left {
     height: 296px;
     background: url("../images/product-header-sm-3.png") no-repeat center;
     background-size: cover; }
-  main .product-bg .bg-right {
+  main .product2-bg .bg-right {
     height: 296px;
     background: url("../images/product-header-sm-4.png") no-repeat center;
     background-size: cover; } }
