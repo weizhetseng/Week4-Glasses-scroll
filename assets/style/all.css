@@ -68,9 +68,11 @@ body {
   padding: 0 12px; }
   @media (max-width: 768px) {
     .container {
+      max-width: 720px;
       padding: 0 36px; } }
   @media (max-width: 375px) {
     .container {
+      max-width: 100%;
       padding: 0 13px; } }
 
 header {
@@ -227,6 +229,8 @@ footer {
       display: flex;
       gap: 48px;
       margin-bottom: 36px; }
+      footer .footer-content .footer-link a:hover {
+        text-decoration: underline; }
     footer .footer-content .footer-contract li {
       margin-bottom: 8px; }
     footer .footer-content .footer-contract a {
@@ -265,6 +269,8 @@ footer {
       display: flex;
       gap: 48px;
       font-size: 14px; }
+      footer .copyright ul a:hover {
+        text-decoration: underline; }
   @media (max-width: 992px) {
     footer .footer-content .footer-social {
       gap: 16px; }
@@ -328,6 +334,8 @@ footer {
       font-size: 20px;
       background: #AA0601;
       padding: 6px 12px; }
+      .banner .banner-text a:hover {
+        text-decoration: underline; }
 
 @media (max-width: 768px) {
   .banner {
@@ -607,6 +615,8 @@ main .product-content {
     main .product-content ul li {
       width: 23%;
       margin-bottom: 80px; }
+      main .product-content ul li img:hover {
+        opacity: 0.5; }
       main .product-content ul li .product-text {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -731,6 +741,8 @@ main .product2-content {
     main .product2-content ul li {
       width: 31%;
       margin-bottom: 80px; }
+      main .product2-content ul li img:hover {
+        opacity: 0.5; }
       main .product2-content ul li .product-text {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -905,6 +917,8 @@ main .question-content {
       padding: 16px 0;
       color: #fff;
       background: #000; }
+      .location-card .location-card-item a:hover {
+        text-decoration: underline; }
 
 @media (max-width: 992px) {
   .location-card .location-card-item {
@@ -925,6 +939,8 @@ main .question-content {
     margin-bottom: 60px; }
     .blog li .blog-img {
       width: 50%; }
+      .blog li .blog-img:hover {
+        opacity: 0.8; }
     .blog li .blog-content {
       width: 50%;
       display: -webkit-box;
