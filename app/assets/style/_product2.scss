@@ -59,6 +59,11 @@ main {
             li {
                 width: 31%;
                 margin-bottom: 80px;
+                img{
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
 
                 .product-text {
                     display: flex;

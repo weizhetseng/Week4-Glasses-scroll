@@ -10,6 +10,9 @@
 
         .blog-img {
             width: 50%;
+            &:hover{
+                opacity: 0.8;
+            }
         }
 
         .blog-content {
