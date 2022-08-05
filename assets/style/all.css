@@ -98,6 +98,7 @@ header {
       display: flex;
       gap: 64px; }
       header .header-content .navbar a {
+        display: block;
         color: #fff; }
         header .header-content .navbar a::after {
           content: "";
@@ -115,39 +116,32 @@ header {
       header .header-content .mobile-menu span {
         color: #fff;
         font-size: 40px; }
-  header .mobile-show {
-    display: none; }
-    header .mobile-show .mobile-navbar {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      text-align: center;
-      gap: 10px;
-      border-top: 1px solid #fff;
-      padding: 20px 0; }
-      header .mobile-show .mobile-navbar a {
-        color: #fff; }
-        header .mobile-show .mobile-navbar a:hover {
-          text-decoration: underline; }
   @media (max-width: 640px) {
-    header .header-content .navbar {
-      display: none; }
-    header .header-content .mobile-menu {
-      display: block; }
-    header .mobile-show {
-      display: block;
-      max-height: 0;
-      overflow: hidden; }
-    header .open.mobile-show {
-      max-height: 100px;
-      -webkit-transition: 1.5s;
-      -o-transition: 1.5s;
-      transition: 1.5s; } }
+    header .header-content {
+      position: relative; }
+      header .header-content .navbar {
+        position: absolute;
+        display: block;
+        text-align: center;
+        background: #AA0601;
+        top: 100%;
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s; }
+        header .header-content .navbar a {
+          padding: 16px;
+          border-top: 1px solid #fff; }
+          header .header-content .navbar a::after {
+            content: none; }
+          header .header-content .navbar a:hover {
+            background: #650300; }
+      header .header-content .mobile-menu {
+        display: block; }
+      header .header-content .open.navbar {
+        max-height: 250px; } }
 
 .product-nav {
   display: -webkit-box;
