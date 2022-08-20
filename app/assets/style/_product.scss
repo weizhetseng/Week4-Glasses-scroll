@@ -20,15 +20,15 @@ main {
     @media (max-width: 768px) {
         .product-bg {
             .bg-left {
-                height: 296px;
-                background: url("../images/product-header-sm-1.png") no-repeat center;
-                background-size: cover;
+
+                background-image: url("../images/product-header-sm-1.png");
+
             }
 
             .bg-right {
-                height: 296px;
-                background: url("../images/product-header-sm-2.png") no-repeat center;
-                background-size: cover;
+
+                background-image: url("../images/product-header-sm-2.png");
+
             }
         }
 
@@ -60,8 +60,8 @@ main {
                 width: 23%;
                 margin-bottom: 80px;
 
-                img{
-                    &:hover{
+                img {
+                    &:hover {
                         opacity: 0.5;
                     }
                 }
@@ -177,14 +177,15 @@ main {
             }
         }
     }
+
     @media (max-width: 576px) {
-        .bookmark{
-            li{
-                a{
+        .bookmark {
+            li {
+                a {
                     font-size: 16px;
                     padding: 8px 10px;
                 }
             }
-        }       
+        }
     }
 }

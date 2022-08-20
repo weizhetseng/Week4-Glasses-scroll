@@ -20,8 +20,8 @@ current: index
 
   <section class="work">
     <div class="container">
-      <h3 class="indexTitle">用專業的心，做專業的事</h3>
-      <ul>
+      <h3 data-aos="fade-up" class="indexTitle">用專業的心，做專業的事</h3>
+      <ul data-aos="fade-up">
         <li>
           <img src="./assets/images/home-section2-1.png" alt="">
           <h4>單一價格</h4>
@@ -49,34 +49,34 @@ current: index
 
   <section class="classic">
     <div class="container">
-      <h3 class="indexTitle">經典系列鏡框</h3>
-      <ul>
+      <h3 data-aos="fade-up" class="indexTitle">經典系列鏡框</h3>
+      <ul data-aos="fade-right">
         <li>
           <img src="./assets/images/home-section3-1.png" alt="">
-          <p>OPTICAL</p>
+          <h4>OPTICAL</h4>
         </li>
         <li>
           <img src="./assets/images/home-section3-2.png" alt="">
-          <p>SUNGLASSES</p>
+          <h4>SUNGLASSES</h4>
         </li>
         <li>
           <img src="./assets/images/home-section3-3.png" alt="">
-          <p>FUNCTIONAL</p>
+          <h4>FUNCTIONAL</h4>
         </li>
       </ul>
     </div>
   </section>
   <section class="design">
     <div class="container">
-      <h3 class="indexTitle">聯名設計鏡框</h3>
+      <h3 data-aos="fade-up" class="indexTitle">聯名設計鏡框</h3>
       <ul>
-        <li>
+        <li data-aos="fade-right">
           <div class="designLeft"></div>
-          <p>DOUBLE A+</p>
+          <h4>DOUBLE A+</h4>
         </li>
-        <li>
+        <li data-aos="fade-left">
           <div class="designRight"></div>
-          <p>YOUTH</p>
+          <h4>YOUTH</h4>
         </li>
       </ul>
     </div>
@@ -84,8 +84,8 @@ current: index
   </section>
   <section class="comment">
     <div class="container">
-      <h3 class="indexTitle">顧客推薦</h3>
-      <ul>
+      <h3 data-aos="fade-up" class="indexTitle">顧客推薦</h3>
+      <ul  data-aos="fade-left">
         <li>
           <img src="./assets/images/home-section5-1.png" alt="">
           <div class="comment-text">
@@ -124,20 +124,20 @@ current: index
   </section>
   <section class="contract">
     <div class="container">
-      <h3 class="indexTitle">聯絡我們</h3>
+      <h3 data-aos="fade-up" class="indexTitle">聯絡我們</h3>
       <p class="contract-info">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-      <form action="#">
+      <form action="#"  data-aos="fade-up">
         <label for="name">姓名</label>
-        <input type="text" placeholder="陳小明" required>
-        <label for="name">聯絡電話</label>
-        <input type="tel" placeholder="0912-345-678" required>
-        <label for="name">電子郵件</label>
-        <input type="email" placeholder="example@email.com" required>
-        <label for="name">意見反應</label>
-        <textarea name="comment" placeholder="請輸入您的意見"></textarea>
+        <input id="name" type="text" placeholder="陳小明" required>
+        <label for="tel">聯絡電話</label>
+        <input id="tel" type="tel" placeholder="0912-345-678" required>
+        <label for="mail">電子郵件</label>
+        <input id="mail" type="email" placeholder="example@email.com" required>
+        <label for="comment">意見反應</label>
+        <textarea id="comment" name="comment" placeholder="請輸入您的意見"></textarea>
         <div class="check">
-          <input type="checkbox" required>
-          <label for="">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+          <input id="check" type="checkbox" required>
+          <label for="check">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
         </div>
         <button type="submit">確認送出</button>
       </form>
