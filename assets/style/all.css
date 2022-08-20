@@ -87,11 +87,15 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    header .header-content img {
+    header .header-content h1 a {
+      background: url(../images/logo-white.png) no-repeat center;
+      background-size: contain;
       width: 80px;
       height: 72px;
-      -o-object-fit: contain;
-         object-fit: contain; }
+      display: block;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap; }
     header .header-content .navbar {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -223,8 +227,20 @@ footer {
       display: flex;
       gap: 48px;
       margin-bottom: 36px; }
-      footer .footer-content .footer-link a:hover {
-        text-decoration: underline; }
+      footer .footer-content .footer-link a {
+        display: block;
+        color: #fff; }
+        footer .footer-content .footer-link a::after {
+          content: "";
+          display: block;
+          width: 0%;
+          height: 2px;
+          background: #fff;
+          -webkit-transition: .4s, .2s;
+          -o-transition: .4s, .2s;
+          transition: .4s, .2s; }
+        footer .footer-content .footer-link a:hover::after {
+          width: 100%; }
     footer .footer-content .footer-contract li {
       margin-bottom: 8px; }
     footer .footer-content .footer-contract a {
@@ -246,7 +262,10 @@ footer {
       gap: 32px; }
       footer .footer-content .footer-social img {
         width: 48px;
-        height: 48px; }
+        height: 48px;
+        opacity: 1; }
+        footer .footer-content .footer-social img:hover {
+          opacity: 0.5; }
   footer .copyright {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -312,10 +331,17 @@ footer {
 .banner {
   height: 787px;
   background: url("../images/home-header.png") no-repeat center;
-  background-size: cover; }
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .banner .container {
+    width: 100%; }
   .banner .banner-text {
     text-align: right;
-    padding: 296px 0;
     color: #650300; }
     .banner .banner-text P {
       font-size: 36px; }
@@ -412,7 +438,7 @@ main .classic {
       width: 30%; }
       main .classic ul li img {
         margin-bottom: 8px; }
-      main .classic ul li p {
+      main .classic ul li h4 {
         font-style: italic;
         font-size: 48px;
         color: #AA0601;
@@ -460,7 +486,7 @@ main .design {
         height: 240px;
         background: url("../images/home-section4-2.png") no-repeat center;
         background-size: cover; }
-      main .design ul li p {
+      main .design ul li h4 {
         font-style: italic;
         color: #AA0601;
         background: #fff;
@@ -544,12 +570,16 @@ main .contract {
       margin-bottom: 8px; }
     main .contract form input {
       margin-bottom: 16px;
-      padding: 6px 12px; }
+      padding: 6px 12px;
+      background: transparent;
+      border: 1px solid #650300; }
     main .contract form textarea {
       padding: 6px 12px;
       resize: none;
       height: 136px;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      background: transparent;
+      border: 1px solid #650300; }
     main .contract form .check {
       margin-bottom: 48px; }
     main .contract form button {
@@ -559,7 +589,10 @@ main .contract {
       color: #fff;
       font-weight: 700;
       border: none;
-      padding: 16px 0; }
+      padding: 16px 0;
+      cursor: pointer; }
+      main .contract form button:hover {
+        background: #650300; }
 
 main .product-bg {
   display: -webkit-box;
@@ -578,13 +611,9 @@ main .product-bg {
 
 @media (max-width: 768px) {
   main .product-bg .bg-left {
-    height: 296px;
-    background: url("../images/product-header-sm-1.png") no-repeat center;
-    background-size: cover; }
+    background-image: url("../images/product-header-sm-1.png"); }
   main .product-bg .bg-right {
-    height: 296px;
-    background: url("../images/product-header-sm-2.png") no-repeat center;
-    background-size: cover; } }
+    background-image: url("../images/product-header-sm-2.png"); } }
 
 main .product-content {
   margin-top: 80px; }
@@ -704,13 +733,9 @@ main .product2-bg {
 
 @media (max-width: 768px) {
   main .product2-bg .bg-left {
-    height: 296px;
-    background: url("../images/product-header-sm-3.png") no-repeat center;
-    background-size: cover; }
+    background-image: url("../images/product-header-sm-3.png"); }
   main .product2-bg .bg-right {
-    height: 296px;
-    background: url("../images/product-header-sm-4.png") no-repeat center;
-    background-size: cover; } }
+    background-image: url("../images/product-header-sm-4.png"); } }
 
 main .product2-content {
   margin-top: 80px; }
